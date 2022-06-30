@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Do It!</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+
+    body {
+        
+        margin: 0px;
+        padding: 0px;
+        background-image: url('IMG/gym1.jpg');
+    }
+
+    .left {
+        background-color: aqua;
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 12px;
+    }
+    .left img{
+        width: 67px;
+    }
+
+    .mid {
+        background-color: NONE;
+        display: block;
+        width: 33%;
+        margin: 15px auto;
+    }
+    .navBar {
+        display: inline-block;
+    }
+    .navBar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+    .navBar li a {
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+    }
+    .navBar li a:hover, .navBar li a:active {
+        background-color: #4d4e54;
+        border-radius: 75px;
+    }
+
+    .right {
+        font-family: Georgia;
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 14px;
+        margin: 15px;
+    }
+    .right input{
+    background-color: #0e121a;
+    border: none;
+    outline: none;
+    width: 0;
+    padding: 0; 
+    opacity: 0;
+    border-radius: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: black;
+    transition: all .5s;
+}
+    .right input::placeholder {
+        color: black;
+    font-weight: 400;
+    }
+    .right i {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    padding: 9px 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+    }
+
+    .right{
+        border-radius: 33px;
+        padding: 3px 3px;
+        margin: 8px;
+    }
+    .right:hover input{
+    background-color: #fff;
+    width: 185px;
+    height: 30px;
+    opacity: 1;
+    padding: 10px 15px;
+    }
+
+    .right:hover i{
+    color: black;
+    }
+
+    .container {
+        font-family: cursive;
+        background-color: none;
+        margin: 88px 35px;
+        border: 0px solid;
+        border-radius: 13px;
+        width: 33%;
+        padding: 52px;
+        color: #fff;
+        text-align: center;
+    }
+    .formgroup input {
+        
+        background-color: none;
+        font-family: 'Times New Roman';
+        text-align: center;
+        display: inline-block;
+        width: 417px;
+        padding: 6px;
+        border: 0px solid black;
+        border-radius: 13px;
+        margin: 11px auto;
+        font-size: 20px;
+    }
+    
+    .container button{
+        display: block;
+        width: 23%;
+        align-items: center;
+        background: black;
+        font-size: medium;
+        color: white;
+        border-color: #0e121a;
+        height: 45px;
+        width: 100%;
+        font: bold15px arial,sans-serif;
+        text-shadow: none;
+    }
+
+</style>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="left">
+            <img src="IMG/logo.png" alt="">
+        </div>
+        <!-- Buttons -->
+        <div class="mid">
+            <ul class="navBar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">TRAINER</a></li>
+                <li><a href="#">CLASSES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- SearchBar -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <div class="right">
+            <input type="text"  class="search" placeholder="Search">
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Be a Part of NIKE fitness club.</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" placeholder="enter name: ">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="mobile number: ">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="address ">
+            </div>
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
